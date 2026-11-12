@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>user Registration Sytem</title>
+      <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
+    form {
+        background-color: white;
+        padding: 30px;
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #1877f2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <h1>create an Account</h1>
+    <p>Register Here to get started</p>
+
+    <form>
+
+        <label>First Name:</label>
+        <input type="text" placeholder="Enter Your first name" required>
+
+        <br><br>
+
+        <label>last Name:</label>>
+        <input type="text" placeholder="Enter Your last name" required>
+    
+        <br><br>
+    
+        <label>Email Address :</label>
+        <input type="email" placeholder=Enter Your email" required>
+    
+        <br><br>
+    
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter Your phone number" required>
+    
+        <br><br>
+    
+        <label>password:</label>
+        <input type="password" placeholder="create a password" required>
+    
+        <br><br>
+    
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="Confirm Your password" required>
+    
+        <br><br>
+    
+        <button type="submit">Register Now</button>
+    
+    </form>
+
+    <script>
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const passwords = document.querySelectorAll('input[type="password"]');
+
+        if (passwords[0].value !== passwords[1].value) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        alert("Registration successful!");
+    });
+    </script>
+
+</body>
+
+</html>
+
+</p>
+</body></title>
+</head>
+</html>
